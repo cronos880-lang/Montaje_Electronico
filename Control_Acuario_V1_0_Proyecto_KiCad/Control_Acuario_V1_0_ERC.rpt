@@ -1,5 +1,9 @@
-ERC report (2026-11-20T16:24:31+0100, Encoding UTF8)
+ERC report (2026-11-20T17:39:12+0000, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
 
 ***** Sheet /
+[lib_symbol_mismatch]: Symbol 'TC4427xOA' doesn't match copy in library 'Driver_FET'
+    ; warning
+    @(276.86 mm, 172.72 mm): Symbol U5 [TC4427xOA]
 
- ** ERC messages: 0  Errors 0  Warnings 0
+ ** ERC messages: 1  Errors 0  Warnings 1
