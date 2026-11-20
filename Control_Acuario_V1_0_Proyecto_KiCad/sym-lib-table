@@ -1,0 +1,4 @@
+(sym_lib_table
+ (version 7)
+ (lib (name "Acuario")(type "KiCad")(uri "${KIPRJMOD}/Acuario.kicad_sym")(options "")(descr "Módulos extraíbles del controlador"))
+)

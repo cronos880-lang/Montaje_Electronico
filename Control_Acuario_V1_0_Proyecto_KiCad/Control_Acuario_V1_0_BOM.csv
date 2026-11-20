@@ -1,0 +1,26 @@
+Referencias;Cantidad;Fabricante o tipo;MPN o valor;Estado
+A1;1;Espressif;ESP32-DevKitC-32E;Confirmar dimensiones y zócalos
+U1;1;Traco Power;TSR 1-4850WI;Confirmar huella y filtro de entrada recomendados
+U2;1;Texas Instruments;LM76005RNPR;Mouser España 5,64 EUR por 1 en la consulta preliminar
+U3;1;Texas Instruments;TPS26632RGER;Confirmar coste y disponibilidad PCBA
+U4;1;Microchip;MCP4725A0T-E/CH;DAC 12 bits
+U5;1;Microchip;TC4427COA;Driver 5 V
+Q1;1;STMicroelectronics;STP55NF06L;Verificar temperatura y tensión de puerta real
+Q2 Q3;2;AOS;AO3400A;Mando de SSR
+L1;1;Bourns;SRP1265A-150M;15 uH y huella pendiente
+D1;1;TVS unidireccional;SMBJ36A;Verificar margen de clamping y fusible
+D2;1;Protección ESD;3.3 V en SOD-323;MPN pendiente
+D3;1;Schottky;SS56 60 V;MPN de fabricante pendiente
+D4;1;Schottky doble;BAT54S;MPN de fabricante pendiente
+F1;1;Fusible retardado DC;4 A nominal;Seleccionar MPN y huella tras validar arranque
+J1 J2 J5 J6;4;Phoenix Contact;1715721;Borna de paso 5.08 mm propuesta
+J3 J4 JP1;3;Conectores y jumper;2.54 mm;MPN pendiente por mecánica
+R1 R2 R3;3;Resistencia 0805 0.1%;49.9 kΩ / 2.94 kΩ / 8.45 kΩ;Verificar curva y tolerancias
+R5 R6 R7;3;Resistencia 0805;3.83 kΩ / 69.8 kΩ / 6.49 kΩ;Ajustes nominales
+R4 R8–R23 R25 R26;19;Resistencia;Valores según esquema;MPN pendiente
+R24;1;Resistencia;3.3 kΩ / 0.5 W;Verificar potencia con derating
+C1–C20;20;Condensador;Valores según esquema;Verificar capacidad efectiva a tensión y añadir MPN
+Externo;1;RTC;Módulo DS3231 3.3 V;Módulo extraíble sin carga CR2032
+Externo;1;Sonda;DS18B20;Verificar módulo y pinout
+Externo;1;Fuente aislada;36 V nominal;MPN pendiente
+Externo;2;SSR CA con mando DC;Entrada compatible 5 V;Modelos pendientes
