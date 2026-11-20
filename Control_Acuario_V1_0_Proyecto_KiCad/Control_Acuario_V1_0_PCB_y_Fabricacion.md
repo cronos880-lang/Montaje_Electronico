@@ -87,3 +87,14 @@ Para regenerarlos: `python3 herramientas/exportar_fabricacion.py`.
 - KiCad 9.0.9 (`kicad-cli` y el módulo Python `pcbnew`) para el esquema, el ERC, la PCB, el DRC, los Gerber y los renders.
 - **Freerouting 2.4.1** (GPL-3.0, de Maven Central, con la suma de control verificada), con OpenJDK 25, solo para el trazado automático de señales. **No forma parte del proyecto**; aprobado por el usuario para esta tarea. La sesión resultante está en `herramientas/Control_Acuario_V1_0.ses`.
 - Scripts reproducibles en `herramientas/`: `generar_pcb.py` (colocación), `trazar_pcb.py` (potencia, vías e importación del trazado) y `exportar_fabricacion.py`.
+
+## 8. Alimentación con una fuente de 24 V (la que tiene el usuario)
+La placa funciona igual con una fuente aislada de 24 V que con una de 36 V, sin cambiar componentes. Todos los cálculos siguientes son estimaciones con datos nominales, pendientes de medir:
+- **Tensión máxima de salida:** el buck reduce tensión, así que con 24 V de entrada la salida máxima a plena carga ronda **21–22 V**, no 24 V. Cálculo: ciclo máximo ≈ 0,95 con t_OFF,mín de 130 ns a 400 kHz, menos las caídas en el MOSFET interno, en L1 y en U3. Para tus dicroicas, que trabajan a 10 V y admiten 12–24 V, no es un problema. Con DAC = 0, la consigna (23,9 V) supera lo alcanzable: el firmware debe limitar el código del DAC.
+- **Corriente de la fuente:** potencia de salida / 0,9 / 24 V, más ≈ 0,3 A del ESP32 y los SSR.
+  - 56 W (siete dicroicas a 12 V): ≈ 2,9 A.
+  - 75 W (máximo previsto): ≈ 3,8 A. Para llegar al máximo, la fuente debe dar **4 A o más (≈ 100 W)**.
+- **Fusible:** con 24 V y la carga cerca de 75 W, la corriente de entrada (≈ 3,8 A) queda muy cerca del T4A; en ese caso conviene un **T5A**. Con las dicroicas actuales a 10 V, el T4A vale.
+- **Convertidor de 5 V (Traco TSR 1-4850WI):** entrada de 9 a 72 V según su hoja de datos, así que funciona a 24 V.
+- **TVS SMBJ40A:** con 24 V queda más margen que con 36 V.
+- La fuente debe ser **aislada (tipo SELV)**, como las fuentes de LED comerciales.

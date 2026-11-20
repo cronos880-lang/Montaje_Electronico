@@ -18922,6 +18922,259 @@
 		(layer "Edge.Cuts")
 		(uuid "2e049d0c-19e4-4614-b610-45d00e73f0dd")
 	)
+	(gr_text "ESP32-DevKitC: USB abajo"
+		(at 115.3 150.6 0)
+		(layer "F.SilkS")
+		(uuid "7795bb8c-c16a-4ac9-9351-4499fff39bb6")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "FUSIBLE T4A 5x20"
+		(at 117.5 166.3 0)
+		(layer "F.SilkS")
+		(uuid "e32ad92a-5f63-4a52-978d-175c58c04420")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "3V3"
+		(at 136.5 105.9 0)
+		(layer "F.SilkS")
+		(uuid "3f9c5072-37b9-468b-bb4e-b619b2d3fedb")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "DQ"
+		(at 139.04 105.9 0)
+		(layer "F.SilkS")
+		(uuid "e9e6abaa-0479-4600-8c5b-64cefdb7fc85")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "GND"
+		(at 141.579999 105.9 0)
+		(layer "F.SilkS")
+		(uuid "ad84397c-1fb9-4873-a5e6-ffedf6ec8e35")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "3V3"
+		(at 146.5 105.9 0)
+		(layer "F.SilkS")
+		(uuid "ebb4e97e-5cfb-4c3e-9b6c-eb5db7676934")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "GND"
+		(at 149.04 105.9 0)
+		(layer "F.SilkS")
+		(uuid "1ac5911a-de78-4cdc-91ed-ebc41b18ae95")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "SDA"
+		(at 151.579999 105.9 0)
+		(layer "F.SilkS")
+		(uuid "afaa1f2a-d4b5-4db9-a647-69e033c59bad")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "SCL"
+		(at 154.12 105.9 0)
+		(layer "F.SilkS")
+		(uuid "63dffc3b-92d8-41dd-a765-5b2a64853024")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "5V"
+		(at 160 105.9 0)
+		(layer "F.SilkS")
+		(uuid "837b5edf-b477-4ed5-ab95-a48dd5003eb2")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "GND"
+		(at 162.54 105.9 0)
+		(layer "F.SilkS")
+		(uuid "9c6fadfb-b775-4854-b471-5a0937498097")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "CH1 BOMBA  CH2 CALENTADOR"
+		(at 163.81 109.1 0)
+		(layer "F.SilkS")
+		(uuid "f1a2f09b-f991-4b63-ad91-e9db5a50ec65")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "CH1"
+		(at 165.079999 105.9 0)
+		(layer "F.SilkS")
+		(uuid "ccb14a4a-5675-49a9-85a6-96c3014c34dc")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "CH2"
+		(at 167.62 105.9 0)
+		(layer "F.SilkS")
+		(uuid "ca81ea09-edaa-418b-bb62-ee5619c2ff4c")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "+ arriba  - abajo"
+		(at 194 154.1 0)
+		(layer "F.SilkS")
+		(uuid "b7396a8b-dbf1-4699-96e3-18b76899d311")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "ENTRADA 24-36V"
+		(at 115.4 159.5 90)
+		(layer "F.SilkS")
+		(uuid "961a7db8-ba6f-414c-83f9-7860f4675e16")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "GND"
+		(at 113 156.9 0)
+		(layer "F.SilkS")
+		(uuid "75b60ffa-fa3e-48e1-aaed-17cafe737019")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.135)
+			)
+		)
+	)
+	(gr_text "+VIN"
+		(at 113 162 0)
+		(layer "F.SilkS")
+		(uuid "bef5ed9a-3188-4af3-b725-69482acb2ed1")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.135)
+			)
+		)
+	)
+	(gr_text "SONDA"
+		(at 139.04 107.6 0)
+		(layer "F.SilkS")
+		(uuid "83001206-47e0-40b6-a81e-c23843d367ad")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.135)
+			)
+		)
+	)
+	(gr_text "RELOJ DS3231"
+		(at 150.31 107.6 0)
+		(layer "F.SilkS")
+		(uuid "1178a6d9-5690-4c53-859d-6cf4bea10d12")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.135)
+			)
+		)
+	)
+	(gr_text "MODULO SSR"
+		(at 163.81 107.6 0)
+		(layer "F.SilkS")
+		(uuid "6ce3ad64-a146-4631-a789-a0243564713d")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.135)
+			)
+		)
+	)
+	(gr_text "SALIDA LUZ"
+		(at 194 152.4 0)
+		(layer "F.SilkS")
+		(uuid "411fc319-5ad5-4afe-8c22-d26c9fa465ef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "CONTROLADOR ACUARIO V1.0 rev.B"
+		(at 160 122 0)
+		(layer "F.SilkS")
+		(uuid "6d6b77d2-a5ca-4cf1-92f5-af2e4a689e99")
+		(effects
+			(font
+				(size 1.4 1.4)
+				(thickness 0.21)
+			)
+		)
+	)
 	(segment
 		(start 146.4 162)
 		(end 147.25 162.6)

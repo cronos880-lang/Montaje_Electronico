@@ -52,7 +52,7 @@ Las 7 dicroicas admiten 12–24 V, admiten mal el PWM y trabajan hoy a **10 V en
 - **Riesgos de red (validación cualificada):** calentador de 350 W ≈ 1,52 A a 230 V en un SSR de 2 A con fusible de 2 A: margen escaso por temperatura (comprobar calentamiento o usar otro SSR con disipador). Bomba de 10 W ≈ 43 mA: no he podido leer la hoja de datos Omron (descarga bloqueada). Si el SSR tiene corriente mínima de carga o fuga apreciable, la bomba puede no arrancar o zumbar en reposo: hay que comprobarlo en banco por el profesional.
 
 ## 6. PCB
-La placa está trazada y las huellas pendientes están resueltas. C9 pasa a 220 µF / 35 V de baja ESR y C10/C11 a 10 µF / 50 V. Detalles, DRC, costes y cómo pedirla en `Control_Acuario_V1_0_PCB_y_Fabricacion.md`. Queda por elegir la fuente de 36 V (≥ 3 A, aislada).
+La placa está trazada y las huellas pendientes están resueltas. C9 pasa a 220 µF / 35 V de baja ESR y C10/C11 a 10 µF / 50 V. Detalles, DRC, costes y cómo pedirla en `Control_Acuario_V1_0_PCB_y_Fabricacion.md`. Fuente: el usuario usará la suya de 24 V. Es válida, con la salida limitada a ≈ 21–22 V; detalles en la sección 8 de la guía de fabricación.
 
 ## 7. Coste orientativo (tarifas publicadas, no presupuesto)
 Tarifas JLCPCB "Economic PCBA" (página oficial, actualizada el 22/10/2026): preparación 8,18 $, plantilla 1,53 $, **3,07 $ por cada componente extendido distinto**, rayos X de QFN 1,64 $/unidad, mano de obra de soldadura manual 3,58 $ por pedido.
