@@ -26,7 +26,7 @@
 ## 2. Cambios del esquema hechos durante el trazado
 - **C9:** 47 µF / 50 V → **220 µF / 35 V de baja ESR** (NXH35V220M8*11.5, LCSC C346959, 56 mΩ y 945 mA a 100 kHz). Con 400 kHz, la tabla 8-1 de TI para el LM76005 recomienda 150 µF a 12 V y 100 µF a 24 V; la revisión anterior se quedaba corta. El total queda muy por debajo del máximo de 800–1200 µF que indica TI.
 - **C10/C11:** 22 µF → 10 µF / 50 V en 1210, porque el valor de 22 µF no está en el catálogo de JLCPCB.
-- **F1:** portafusibles de pinzas 5 × 20 mm con fusible T4A, fácil de reponer.
+- **F1:** portafusibles de pinzas 5 × 20 mm, fácil de reponer. Fusible **T5A**, elegido para la fuente de 24 V y 5 A del usuario.
 - **L1:** huella con el patrón recomendado por Bourns (14,2 / 8,0 / 5,0 mm).
 - **A1:** huella propia del zócalo del ESP32-DevKitC V4, hecha con las cotas oficiales de Espressif.
 - ERC: 0 errores y 1 aviso de versión del símbolo TC4427, sin efecto eléctrico.
@@ -66,7 +66,7 @@ Para regenerarlos: `python3 herramientas/exportar_fabricacion.py`.
 - No cobra 3,07 $ por cada componente extendido, pero los componentes los compra PCBWay y entran en su presupuesto.
 - **Sin subir los archivos no se puede saber cuál sale más barato.** Lo correcto es pedir las dos cotizaciones con el mismo ZIP: mismas medidas, cobre y número de placas montadas.
 
-**Aparte (no lo monta el fabricante):** convertidor Traco TSR 1-4850WI (no está en JLCPCB; Mouser o Farnell), Q1 STP55NF06L, C1, C9, las dos bornas MKDS, las pinzas y el fusible 5 × 20 T4A, las tiras de pines y dos tiras hembra 1 × 19 para el DevKit, el ESP32-DevKitC-32E, el módulo DS3231, la sonda DS18B20, la fuente de 36 V (≥ 3 A) y tu módulo de 2 SSR. Son componentes de inserción fáciles de soldar a mano.
+**Aparte (no lo monta el fabricante):** convertidor Traco TSR 1-4850WI (no está en JLCPCB; Mouser o Farnell), Q1 STP55NF06L, C1, C9, las dos bornas MKDS, las pinzas y el fusible 5 × 20 T5A, las tiras de pines y dos tiras hembra 1 × 19 para el DevKit, el ESP32-DevKitC-32E, el módulo DS3231, la sonda DS18B20, la fuente de 36 V (≥ 3 A) y tu módulo de 2 SSR. Son componentes de inserción fáciles de soldar a mano.
 
 ## 5. Cómo pedirlo en JLCPCB (cuando apruebes la revisión)
 1. En jlcpcb.com, entra en **Order now** y sube `fabricacion/Control_Acuario_V1_0_Gerber.zip`.
@@ -94,7 +94,8 @@ La placa funciona igual con una fuente aislada de 24 V que con una de 36 V, sin 
 - **Corriente de la fuente:** potencia de salida / 0,9 / 24 V, más ≈ 0,3 A del ESP32 y los SSR.
   - 56 W (siete dicroicas a 12 V): ≈ 2,9 A.
   - 75 W (máximo previsto): ≈ 3,8 A. Para llegar al máximo, la fuente debe dar **4 A o más (≈ 100 W)**.
-- **Fusible:** con 24 V y la carga cerca de 75 W, la corriente de entrada (≈ 3,8 A) queda muy cerca del T4A; en ese caso conviene un **T5A**. Con las dicroicas actuales a 10 V, el T4A vale.
+- **Fusible:** con 24 V y la carga cerca de 75 W, la corriente de entrada (≈ 3,8 A) quedaría muy cerca de un T4A. Por eso el diseño pasa a **T5A**.
+- **Fuente del usuario: 24 V y 5 A como mínimo (120 W).** Cubre las 7 dicroicas (≈ 2,9 A) y el máximo de 75 W (≈ 3,8 A) con margen.
 - **Convertidor de 5 V (Traco TSR 1-4850WI):** entrada de 9 a 72 V según su hoja de datos, así que funciona a 24 V.
 - **TVS SMBJ40A:** con 24 V queda más margen que con 36 V.
 - La fuente debe ser **aislada (tipo SELV)**, como las fuentes de LED comerciales.

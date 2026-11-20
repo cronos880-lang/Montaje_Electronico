@@ -21,7 +21,7 @@ TEXTS = [
     # Salida de luz J2
     ('SALIDA LUZ', 94.0, 52.4, 1.0, 0), ('+ arriba  - abajo', 94.0, 54.1, 0.8, 0),
     # Fusible
-    ('FUSIBLE T4A 5x20', 17.5, 66.3, 0.8, 0),
+    ('FUSIBLE T5A 5x20', 17.5, 66.3, 0.8, 0),
     # DevKit
     ('ESP32-DevKitC: USB abajo', 15.3, 50.6, 0.8, 0),
     # Título

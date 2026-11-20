@@ -5253,7 +5253,7 @@
 				)
 			)
 		)
-		(property "Value" "T4A 5×20"
+		(property "Value" "T5A 5×20"
 			(at 10 3.5 0)
 			(layer "F.Fab")
 			(uuid "a61322a5-d9a9-49bf-bb61-17f9df4ff8a3")
@@ -18925,7 +18925,7 @@
 	(gr_text "ESP32-DevKitC: USB abajo"
 		(at 115.3 150.6 0)
 		(layer "F.SilkS")
-		(uuid "7795bb8c-c16a-4ac9-9351-4499fff39bb6")
+		(uuid "08beda11-b993-491a-bce5-4cb75f344161")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -18933,10 +18933,10 @@
 			)
 		)
 	)
-	(gr_text "FUSIBLE T4A 5x20"
+	(gr_text "FUSIBLE T5A 5x20"
 		(at 117.5 166.3 0)
 		(layer "F.SilkS")
-		(uuid "e32ad92a-5f63-4a52-978d-175c58c04420")
+		(uuid "cbc8f27e-44ad-406e-a6ab-f877089cb294")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -18947,7 +18947,7 @@
 	(gr_text "3V3"
 		(at 136.5 105.9 0)
 		(layer "F.SilkS")
-		(uuid "3f9c5072-37b9-468b-bb4e-b619b2d3fedb")
+		(uuid "6544f36f-005f-4c41-8f2d-88642c150dc9")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -18958,7 +18958,7 @@
 	(gr_text "DQ"
 		(at 139.04 105.9 0)
 		(layer "F.SilkS")
-		(uuid "e9e6abaa-0479-4600-8c5b-64cefdb7fc85")
+		(uuid "be185b6b-468f-4699-ad58-1656f831d203")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -18969,7 +18969,7 @@
 	(gr_text "GND"
 		(at 141.579999 105.9 0)
 		(layer "F.SilkS")
-		(uuid "ad84397c-1fb9-4873-a5e6-ffedf6ec8e35")
+		(uuid "d45a0066-cf79-42a4-be65-fb335455c0fc")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -18980,7 +18980,7 @@
 	(gr_text "3V3"
 		(at 146.5 105.9 0)
 		(layer "F.SilkS")
-		(uuid "ebb4e97e-5cfb-4c3e-9b6c-eb5db7676934")
+		(uuid "601c22c5-5fdb-484c-b0d1-df45ca31af69")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -18991,7 +18991,7 @@
 	(gr_text "GND"
 		(at 149.04 105.9 0)
 		(layer "F.SilkS")
-		(uuid "1ac5911a-de78-4cdc-91ed-ebc41b18ae95")
+		(uuid "7a96052a-b4ba-44aa-b03f-16c62befeed5")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -19002,7 +19002,7 @@
 	(gr_text "SDA"
 		(at 151.579999 105.9 0)
 		(layer "F.SilkS")
-		(uuid "afaa1f2a-d4b5-4db9-a647-69e033c59bad")
+		(uuid "232f66be-bcd4-4f1b-9aad-cc9904e35023")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -19013,7 +19013,7 @@
 	(gr_text "SCL"
 		(at 154.12 105.9 0)
 		(layer "F.SilkS")
-		(uuid "63dffc3b-92d8-41dd-a765-5b2a64853024")
+		(uuid "8f26b167-1786-42f7-ad2c-bf0d7b12e695")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -19024,7 +19024,7 @@
 	(gr_text "5V"
 		(at 160 105.9 0)
 		(layer "F.SilkS")
-		(uuid "837b5edf-b477-4ed5-ab95-a48dd5003eb2")
+		(uuid "464f1b50-060a-4fa2-a8e8-40384f8bdd8d")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -19035,7 +19035,7 @@
 	(gr_text "GND"
 		(at 162.54 105.9 0)
 		(layer "F.SilkS")
-		(uuid "9c6fadfb-b775-4854-b471-5a0937498097")
+		(uuid "9df42a2e-1d33-454d-9a60-f2a5c1a5fe6c")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -19046,7 +19046,7 @@
 	(gr_text "CH1 BOMBA  CH2 CALENTADOR"
 		(at 163.81 109.1 0)
 		(layer "F.SilkS")
-		(uuid "f1a2f09b-f991-4b63-ad91-e9db5a50ec65")
+		(uuid "f614e206-117f-4264-a308-59a598b8e096")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -19057,7 +19057,7 @@
 	(gr_text "CH1"
 		(at 165.079999 105.9 0)
 		(layer "F.SilkS")
-		(uuid "ccb14a4a-5675-49a9-85a6-96c3014c34dc")
+		(uuid "db387c26-20f4-4a31-b825-4b9d80ac2eec")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -19068,7 +19068,7 @@
 	(gr_text "CH2"
 		(at 167.62 105.9 0)
 		(layer "F.SilkS")
-		(uuid "ca81ea09-edaa-418b-bb62-ee5619c2ff4c")
+		(uuid "2af60c34-602b-43ac-9ade-8b5ef6d022f6")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -19079,7 +19079,7 @@
 	(gr_text "+ arriba  - abajo"
 		(at 194 154.1 0)
 		(layer "F.SilkS")
-		(uuid "b7396a8b-dbf1-4699-96e3-18b76899d311")
+		(uuid "2d3a0d7e-89d9-4c73-8437-a023c98ecee1")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -19090,7 +19090,7 @@
 	(gr_text "ENTRADA 24-36V"
 		(at 115.4 159.5 90)
 		(layer "F.SilkS")
-		(uuid "961a7db8-ba6f-414c-83f9-7860f4675e16")
+		(uuid "35365c7b-37f0-443c-b3d4-a39af68b62e7")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -19101,7 +19101,7 @@
 	(gr_text "GND"
 		(at 113 156.9 0)
 		(layer "F.SilkS")
-		(uuid "75b60ffa-fa3e-48e1-aaed-17cafe737019")
+		(uuid "db9c87ca-7df7-4df1-8df5-10d950ec2d43")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -19112,7 +19112,7 @@
 	(gr_text "+VIN"
 		(at 113 162 0)
 		(layer "F.SilkS")
-		(uuid "bef5ed9a-3188-4af3-b725-69482acb2ed1")
+		(uuid "b6e99563-b795-41fe-8ceb-b9a3f9f86b8e")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -19123,7 +19123,7 @@
 	(gr_text "SONDA"
 		(at 139.04 107.6 0)
 		(layer "F.SilkS")
-		(uuid "83001206-47e0-40b6-a81e-c23843d367ad")
+		(uuid "c5c94b50-0189-4823-a35a-647848ee5525")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -19134,7 +19134,7 @@
 	(gr_text "RELOJ DS3231"
 		(at 150.31 107.6 0)
 		(layer "F.SilkS")
-		(uuid "1178a6d9-5690-4c53-859d-6cf4bea10d12")
+		(uuid "af8c726d-27ac-46a5-8ad0-03967ca28056")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -19145,7 +19145,7 @@
 	(gr_text "MODULO SSR"
 		(at 163.81 107.6 0)
 		(layer "F.SilkS")
-		(uuid "6ce3ad64-a146-4631-a789-a0243564713d")
+		(uuid "5cbc03f4-fe61-4489-8fbf-72138bd450ff")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -19156,7 +19156,7 @@
 	(gr_text "SALIDA LUZ"
 		(at 194 152.4 0)
 		(layer "F.SilkS")
-		(uuid "411fc319-5ad5-4afe-8c22-d26c9fa465ef")
+		(uuid "9692780d-773b-4b50-aa75-7983390df179")
 		(effects
 			(font
 				(size 1 1)
@@ -19167,7 +19167,7 @@
 	(gr_text "CONTROLADOR ACUARIO V1.0 rev.B"
 		(at 160 122 0)
 		(layer "F.SilkS")
-		(uuid "6d6b77d2-a5ca-4cf1-92f5-af2e4a689e99")
+		(uuid "fb720120-5e05-473b-9a63-d0f3530f12ee")
 		(effects
 			(font
 				(size 1.4 1.4)

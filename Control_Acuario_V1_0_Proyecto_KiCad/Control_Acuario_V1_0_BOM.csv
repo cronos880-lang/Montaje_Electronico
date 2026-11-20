@@ -43,7 +43,7 @@ R17;1;22 Ω 1 %;R_0805;0805W8F220JT5E;C17561;Básico;0,005;SMT;
 R18 R21 R23 R26 R32 R33;6;47 kΩ 1 %;R_0805;0805W8F4702T5E;C17713;Básico;0,007;SMT;
 R24;1;3,3 kΩ 0,5 W;R_2010;WR20X332JTL;C171277;Extendido;0,02;SMT;
 U1;1;Convertidor 5 V 1 A (entrada hasta 72 V);TRACO_TSR-1_THT;Traco TSR 1-4850WI;—;No disponible en JLCPCB;Por cotizar;Manual (compra aparte);
-F1;1;Fusible 4 A retardado DC;Pendiente;Pendiente MPN;—;—;—;Pendiente;Elegir tras ensayo de arranque
+F1;1;Fusible 5×20 mm retardado T5A + pinzas de PCB;Fuseholder_Clip-5x20mm_Littelfuse_111;Pinzas 5×20 (p. ej. Littelfuse 111) y fusible T5A 250 V;—;—;—;Manual;T5A para fuente de 24 V 5 A (≈3,8 A de entrada a 75 W)
 J1 J2;2;Borna 2 vías 5,08 mm;MKDS-1,5-2-5.08;Phoenix MKDS 1,5/ 2-5,08;C5183929;Extendido (THT);0,50;Manual;
 J3 J4 J5;3;Tira 2,54 mm 4, 3 y 4 vías;PinHeader 2,54 mm;Genérico;—;—;—;Manual;
 A1;1;ESP32-DevKitC-32E;Pendiente (2 × 1×19 hembra);Espressif;—;Externo;—;Zócalo;Módulo extraíble, compra aparte
