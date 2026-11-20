@@ -205,8 +205,9 @@ POWER_TRACKS = [
     ('/LED_POS', 1.5, [(86.5, 59.5), (86.5, 58.5)]),
     ('/LED_NEG', 2.0, [(94.0, 63.58), (86.5, 63.58), (86.04, 66.5), (86.04, 70.3)]),
     ('/BUCK_BOOT', 0.25, [(44.86, 62.0), (46.4, 62.0), (47.25, 62.6)]),
+    ('/BUCK_VOUT', 0.3, [(64.45, 53.6), (42.5, 53.6), (41.6, 54.5), (40.91, 54.5)]),  # medida para el divisor de FB (R1)
     ('/BUCK_VCC', 0.25, [(44.86, 61.0), (46.95, 61.0), (46.95, 60.35)]),
-    ('/VCC_5V', 0.3, [(44.86, 60.5), (45.9, 60.5), (45.9, 58.0)]),
+    ('/VCC_5V', 0.3, [(44.86, 60.5), (45.9, 60.5), (45.9, 56.95)]),
 ]
 STUBS = [  # (ref, pad, punto destino) a 0,25 mm desde patillas de QFN
     ('U2', '1', (45.9, 64.5)), ('U2', '2', (45.9, 64.0)), ('U2', '3', (45.9, 63.5)), ('U2', '4', (45.9, 63.0)), ('U2', '5', (45.9, 62.9)),
@@ -243,10 +244,25 @@ def power_tracks(b):
         for u0, u1 in zip(cuts, cuts[1:]):
             seg(n, w, P(ax + u0 * (cx - ax), ay + u0 * (cy - ay)), P(ax + u1 * (cx - ax), ay + u1 * (cy - ay)))
 
+
+def bcu_keepout(b):
+    """Prohíbe pistas en B.Cu bajo la almohadilla térmica de U2 y U3 (+0,6 mm): caben todas las vías
+    térmicas y el plano de masa inferior queda entero bajo la zona caliente."""
+    for ref in ('U2', 'U3'):
+        f = b.FindFootprintByReference(ref)
+        ep = [p for p in f.Pads() if p.GetNumber() in ('31', '25')][0]
+        bb = ep.GetBoundingBox(); bb.Inflate(mm(0.6))
+        k = pcbnew.ZONE(b); k.SetIsRuleArea(True); k.SetDoNotAllowTracks(True); k.SetDoNotAllowVias(False)
+        k.SetDoNotAllowCopperPour(False); k.SetDoNotAllowPads(False); k.SetDoNotAllowFootprints(False)
+        k.SetLayer(pcbnew.B_Cu); ol = k.Outline(); ol.NewOutline()
+        for (x, y) in ((bb.GetLeft(), bb.GetTop()), (bb.GetRight(), bb.GetTop()), (bb.GetRight(), bb.GetBottom()), (bb.GetLeft(), bb.GetBottom())):
+            ol.Append(x, y)
+        k.SetZoneName('sin_pistas_' + ref); b.Add(k)
+
 if __name__ == '__main__':
     b = pcbnew.LoadBoard(PCB)
     if sys.argv[1] == 'vias':
-        power_tracks(b)
+        power_tracks(b); bcu_keepout(b)
         smd_gnd = [(f.GetReference(), p.GetNumber()) for f in b.Footprints() for p in f.Pads()
                    if p.GetNetname() == '/GND' and p.GetAttribute() == pcbnew.PAD_ATTRIB_SMD and f.GetReference() not in ('U2', 'U3')]
         print('Vías de salida GND:', via_near_pads(b, smd_gnd))

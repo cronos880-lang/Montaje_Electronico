@@ -73,7 +73,7 @@ Para regenerarlos: `python3 herramientas/exportar_fabricacion.py`.
 2. Opciones de la PCB: 2 capas, FR-4, 1,6 mm, 5 unidades, color verde (el más barato), acabado HASL sin plomo y cobre de 1 oz.
 3. Activa **PCB Assembly**: Economic, cara superior y el número de placas montadas (1 o 2). Deja que JLCPCB añada los taladros de utillaje.
 4. Sube la BOM `Control_Acuario_V1_0_BOM_JLCPCB.csv` y el CPL `Control_Acuario_V1_0_CPL_JLCPCB.csv`. Comprueba que los 41 componentes aparecen emparejados y con stock.
-   - **Ojo:** el MCP4725 (U4) tenía solo 4 unidades, el TPS26632 (U3) 93, y R2/R3 (0,1 %) 5 y 7 unidades.
+   - Tras la revisión final, U4 (MCP4725A1) y R2/R3 tienen stock holgado. Vigila el TPS26632 (U3), con 93 unidades al consultarlo.
 5. En la vista previa de colocación, **revisa la orientación de la patilla 1** de U2, U3, U4, U5, D1, D3, D5, D2, D4, Q2–Q5 y L1. JLCPCB a veces necesita corregir el giro. Puedes marcar "Confirm Parts Placement" (0,45 $) para que te lo enseñen antes de montar.
 6. Para comparar, haz lo mismo en PCBWay (PCB Assembly → Quote) con los mismos archivos.
 7. **No pagues hasta revisar el presupuesto completo.** Yo no hago pedidos ni autorizo la fabricación.

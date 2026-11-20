@@ -1,14 +1,14 @@
 Referencias;Cantidad;Valor;Huella KiCad;Fabricante / MPN propuesto;LCSC;Tipo JLCPCB;Precio unitario JLCPCB (USD, 1 ud, consulta 20/11/2026);Montaje;Estado
 U2;1;LM76005 buck 60 V 5 A;Texas_RNP0030B_WQFN-30;TI LM76005RNPR;C2866241;Extendido;3,63;SMT;Stock 4909
 U3;1;TPS26632 eFuse 60 V 6 A;Texas_RGE0024H_VQFN-24;TI TPS26632RGER;C1850278;Extendido;3,52;SMT;Stock 93: comprobar antes de pedir
-U4;1;MCP4725 DAC 12 bits I2C;SOT-23-6;Microchip MCP4725A0T-E/CH;C144198;Extendido;0,96;SMT;Stock 4: riesgo de rotura de stock
+U4;1;MCP4725 DAC 12 bits I2C (dirección 0x62);SOT-23-6;Microchip MCP4725A1T-E/CH;C61423;Extendido;—;SMT;Cambio por stock (A0 tenía 4 uds); firmware: dirección 0x62
 U5;1;TC4427 driver doble;SOIC-8;Microchip TC4427COA;C636890;Extendido;1,56;SMT;Alternativa más barata a evaluar
 L1;1;15 µH Irms 9 A Isat 12,5 A;Pendiente (12,5 × 12,5 mm);Bourns SRP1265A-150M;C189912;Extendido;1,28;SMT;Huella por crear según hoja de datos Bourns
 Q1;1;MOSFET N 60 V nivel lógico;TO-220 vertical;ST STP55NF06L;C77582;Extendido (THT);1,44;Manual;Soldar a mano o sustituir por SMD
 Q2 Q3;2;MOSFET N SOT-23;SOT-23;AOS AO3400A;C20917;Básico;0,08;SMT;
 Q4 Q5;2;MOSFET P SOT-23 (mando SSR a 5 V);SOT-23;AOS AO3401A;C15127;Básico;0,08;SMT;Nuevo rev. B (módulo de disparo a nivel alto)
 D1;1;TVS unidireccional 40 V;D_SMB;SMBJ40A;C114003;Extendido;0,05;SMT;
-D2;1;ESD 3,3 V;D_SOD-323;CESD3V3D3;C38388;Extendido;0,02;SMT;
+D2;1;ESD 3,3 V unidireccional;D_SOD-323;CESD3V3D3;C38388;Extendido;0,02;SMT;Cátodo (pad 1) a SONDA_DQ
 D3;1;Schottky 40 V 5 A (retorno lámpara);D_SMA;SS54;C22452;Básico;0,04;SMT;Cambio rev. B (antes SS56 SMC)
 D4;1;Doble Schottky;SOT-23;BAT54S;C47546;Extendido;0,02;SMT;
 D5;1;Schottky 40 V 3 A (5 V → DevKit);D_SMA;SS34;C8678;Básico;0,03;SMT;Nuevo rev. B (sustituye a JP1)
@@ -26,8 +26,8 @@ C13 C14 C20;3;1 µF / 50 V;C_0805;CL21B105KBFNNNE;C28323;Básico;0,03;SMT;
 C16 C17 C18;3;100 nF;C_0805;CC0805KRX7R9BB104;C49678;Básico;0,01;SMT;
 C19;1;4,7 µF;C_0805;CL21A475KAQNNNE;C1779;Básico;0,03;SMT;
 R1;1;49,9 kΩ 0,1 %;R_0805;RT0805BRD0749K9L;C469661;Extendido;0,04;SMT;
-R2;1;2,94 kΩ 0,1 %;R_0805;RT0805BRD072K94L;C865383;Extendido;0,05;SMT;Stock 5: vigilar
-R3;1;8,45 kΩ 0,1 %;R_0805;RT0805BRD078K45L;C865689;Extendido;0,04;SMT;Stock 7: vigilar
+R2;1;3,0 kΩ 0,1 %;R_0805;RT0805BRD073KL;C728652;Extendido;—;SMT;Cambio por stock; VBUCK = 23,86 − 6,09·VDAC
+R3;1;8,2 kΩ 0,1 %;R_0805;PTFR0805B8K20N9;C351543;Extendido;—;SMT;Cambio por stock
 R5;1;3,3 kΩ 1 %;R_0805;0805W8F3301T5E;C26010;Básico;0,004;SMT;Rev. B: ILIM = R5 + R29
 R29;1;150 Ω 1 %;R_0805;0805W8F1500T5E;C17471;Básico;0,003;SMT;Nuevo rev. B
 R6;1;68 kΩ 1 %;R_0805;0805W8F6802T5E;C17801;Básico;0,003;SMT;Rev. B: PLIM ≈68 W

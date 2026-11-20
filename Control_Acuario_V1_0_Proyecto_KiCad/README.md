@@ -5,6 +5,7 @@
 ## Para revisar
 - [Esquema en PDF (rev. B)](Control_Acuario_V1_0_Esquema.pdf)
 - [PCB y guía de fabricación (coste, cómo pedir)](Control_Acuario_V1_0_PCB_y_Fabricacion.md)
+- [Revisión final antes del pedido](Control_Acuario_V1_0_Revision_Final_Prepedido.md)
 - [Vista 3D cara superior](Control_Acuario_V1_0_PCB_3D_superior.png) · [PDF cara superior](Control_Acuario_V1_0_PCB_cara_superior.pdf) · [PDF cara inferior](Control_Acuario_V1_0_PCB_cara_inferior.pdf)
 - [Informe DRC (KiCad 9.0.9)](Control_Acuario_V1_0_DRC.rpt)
 - [Archivos de fabricación](fabricacion/)
