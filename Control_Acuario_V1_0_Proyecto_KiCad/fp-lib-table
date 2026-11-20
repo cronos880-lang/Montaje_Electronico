@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Acuario")(type "KiCad")(uri "${KIPRJMOD}/Acuario.pretty")(options "")(descr "Huellas propias del controlador"))
+)
