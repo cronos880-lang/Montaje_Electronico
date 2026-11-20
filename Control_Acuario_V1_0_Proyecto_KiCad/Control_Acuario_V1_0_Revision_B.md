@@ -44,14 +44,20 @@ R6 69,8 kΩ → **68 kΩ** (componente básico de JLCPCB): P_LIM ≈ 68 W, ±6 %
 ## 4. Luminarias actuales (información del usuario)
 Las 7 dicroicas admiten 12–24 V, admiten mal el PWM y trabajan hoy a **10 V en continua** para limitar la corriente. El modo continuo es el principal: 10 V está dentro del rango (U3 arranca desde ≈4,8 V). El PWM queda para otras luminarias. Si se probara con estas, hay que medir los picos de cada pulso, porque el fast-trip de U3 (2 × I_OL en 3,2 µs, hecho) podría enclavarlo.
 
-## 5. Pendientes que bloquean el trazado
-1. **Módulo SSR de 2 canales del usuario:** modelo exacto y tipo de disparo (nivel bajo o alto). J5/J6 dan 5 V y un retorno conmutado: sirven para un SSR suelto o un módulo de **disparo a nivel bajo** alimentado a 5 V. Un módulo de disparo a nivel alto necesita otro mando. Muchas placas de 2 SSR para Arduino llevan Omron G3MB-202P (hipótesis): hay que comprobar su corriente mínima de carga con la bomba de 10 W (≈43 mA a 230 V).
-2. Huellas de A1 (zócalo del ESP32-DevKitC-32E), L1 (12,5 × 12,5 mm) y F1.
-3. Fuente de 36 V: modelo y tolerancia de ajuste.
+## 5. Mando de los SSR (módulo DollaTek del usuario)
+**Hechos (ficha Amazon B07DK3ZZSL):** 2 canales, alimentación 5 V / 160 mA, entrada 0–2,5 V = OFF y 3,3–5 V = ON (**disparo a nivel alto**), relés Omron, carga AC 100–240 V 2 A, fusible de 2 A en salida.
+- Los mandos de la rev. A (5 V + retorno conmutado) **no servían** para este módulo. Una salida directa del ESP32 (3,3 V nominal) quedaría justo en el umbral de 3,3 V.
+- **Rev. B:** J5 único de 4 vías (DC+, DC−, CH1 bomba, CH2 calentador) y etapa de 5 V en alto por canal: Q2/Q3 (N) + Q4/Q5 (P, AO3401A), R30/R31 10 kΩ y R32/R33 47 kΩ. Todos son básicos de JLCPCB. Al arrancar o reiniciar, el GPIO queda en alta impedancia: R21/R23 apagan Q2/Q3, R30/R31 apagan Q4/Q5 y R32/R33 llevan CH a 0 V → **SSR apagados**. J6 desaparece.
+- El módulo toma unos 160 mA del carril de 5 V (TSR de 1 A): ESP32 (≈0,25 A típicos, picos mayores) + módulo + resto ≈ 0,5 A (estimación).
+- **Riesgos de red (validación cualificada):** calentador de 350 W ≈ 1,52 A a 230 V en un SSR de 2 A con fusible de 2 A: margen escaso por temperatura (comprobar calentamiento o usar otro SSR con disipador). Bomba de 10 W ≈ 43 mA: no he podido leer la hoja de datos Omron (descarga bloqueada). Si el SSR tiene corriente mínima de carga o fuga apreciable, la bomba puede no arrancar o zumbar en reposo: hay que comprobarlo en banco por el profesional.
 
-## 6. Coste orientativo (tarifas publicadas, no presupuesto)
+## 6. Pendientes que bloquean el trazado
+1. Huellas de A1 (zócalo del ESP32-DevKitC-32E), L1 (12,5 × 12,5 mm) y F1.
+2. Fuente de 36 V: modelo y tolerancia de ajuste.
+
+## 7. Coste orientativo (tarifas publicadas, no presupuesto)
 Tarifas JLCPCB "Economic PCBA" (página oficial, actualizada el 22/10/2026): preparación 8,18 $, plantilla 1,53 $, **3,07 $ por cada componente extendido distinto**, rayos X de QFN 1,64 $/unidad, mano de obra de soldadura manual 3,58 $ por pedido.
-- Componentes SMD extendidos de la rev. B: 16 → ≈ 49 $ de tarifa por pedido, el mayor coste para 1–2 placas.
+- Componentes SMD extendidos de la rev. B: 16 (Q4/Q5 y sus resistencias son básicos) → ≈ 49 $ de tarifa por pedido, el mayor coste para 1–2 placas.
 - Componentes por placa (precios JLCPCB de 1 unidad): ≈ 13 $.
 - Fuera de JLCPCB: TSR 1-4850WI, DevKit, RTC, sonda, fuente de 36 V y F1.
 La comparativa con PCBWay, portes e IVA se hará con los archivos de fabricación (paso 4 del encargo).

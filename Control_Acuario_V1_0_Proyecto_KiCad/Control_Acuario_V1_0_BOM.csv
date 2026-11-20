@@ -6,6 +6,7 @@ U5;1;TC4427 driver doble;SOIC-8;Microchip TC4427COA;C636890;Extendido;1,56;SMT;A
 L1;1;15 µH Irms 9 A Isat 12,5 A;Pendiente (12,5 × 12,5 mm);Bourns SRP1265A-150M;C189912;Extendido;1,28;SMT;Huella por crear según hoja de datos Bourns
 Q1;1;MOSFET N 60 V nivel lógico;TO-220 vertical;ST STP55NF06L;C77582;Extendido (THT);1,44;Manual;Soldar a mano o sustituir por SMD
 Q2 Q3;2;MOSFET N SOT-23;SOT-23;AOS AO3400A;C20917;Básico;0,08;SMT;
+Q4 Q5;2;MOSFET P SOT-23 (mando SSR a 5 V);SOT-23;AOS AO3401A;C15127;Básico;0,08;SMT;Nuevo rev. B (módulo de disparo a nivel alto)
 D1;1;TVS unidireccional 40 V;D_SMB;SMBJ40A;C114003;Extendido;0,05;SMT;
 D2;1;ESD 3,3 V;D_SOD-323;CESD3V3D3;C38388;Extendido;0,02;SMT;
 D3;1;Schottky 40 V 5 A (retorno lámpara);D_SMA;SS54;C22452;Básico;0,04;SMT;Cambio rev. B (antes SS56 SMC)
@@ -34,19 +35,19 @@ R7;1;6,8 kΩ 1 %;R_0805;0805W8F6801T5E;C17772;Básico;0,003;SMT;Rev. B
 R10 R27;2;100 kΩ 1 %;R_0805;0805W8F1003T5E;C149504;Básico;0,003;SMT;R27 nuevo rev. B
 R11;1;8,2 kΩ 1 %;R_0805;0805W8F8201T5E;C17828;Básico;0,003;SMT;Rev. B
 R28;1;33 kΩ 1 %;R_0805;0805W8F3302T5E;C17633;Básico;0,003;SMT;Nuevo rev. B
-R4 R8 R9 R16;4;10 kΩ 1 %;R_0805;0805W8F1002T5E;C17414;Básico;0,003;SMT;
+R4 R8 R9 R16 R30 R31;6;10 kΩ 1 %;R_0805;0805W8F1002T5E;C17414;Básico;0,003;SMT;
 R19;1;10 kΩ 1 %;R_1206;1206W4F1002T5E;C17902;Básico;0,006;SMT;
 R12 R13 R14 R25;4;4,7 kΩ 1 %;R_0805;0805W8F4701T5E;C17673;Básico;0,003;SMT;
 R15 R20 R22;3;100 Ω 1 %;R_0805;0805W8F1000T5E;C17408;Básico;0,004;SMT;
 R17;1;22 Ω 1 %;R_0805;0805W8F220JT5E;C17561;Básico;0,005;SMT;
-R18 R21 R23 R26;4;47 kΩ 1 %;R_0805;0805W8F4702T5E;C17713;Básico;0,007;SMT;
+R18 R21 R23 R26 R32 R33;6;47 kΩ 1 %;R_0805;0805W8F4702T5E;C17713;Básico;0,007;SMT;
 R24;1;3,3 kΩ 0,5 W;R_2010;WR20X332JTL;C171277;Extendido;0,02;SMT;
 U1;1;Convertidor 5 V 1 A (entrada hasta 72 V);TRACO_TSR-1_THT;Traco TSR 1-4850WI;—;No disponible en JLCPCB;Por cotizar;Manual (compra aparte);
 F1;1;Fusible 4 A retardado DC;Pendiente;Pendiente MPN;—;—;—;Pendiente;Elegir tras ensayo de arranque
-J1 J2 J5 J6;4;Borna 2 vías 5,08 mm;MKDS-1,5-2-5.08;Phoenix MKDS 1,5/ 2-5,08;C5183929;Extendido (THT);0,50;Manual;J5/J6 pendientes del módulo SSR real
-J3 J4;2;Tira 2,54 mm 4 y 3 vías;PinHeader 2,54 mm;Genérico;—;—;—;Manual;
+J1 J2;2;Borna 2 vías 5,08 mm;MKDS-1,5-2-5.08;Phoenix MKDS 1,5/ 2-5,08;C5183929;Extendido (THT);0,50;Manual;
+J3 J4 J5;3;Tira 2,54 mm 4, 3 y 4 vías;PinHeader 2,54 mm;Genérico;—;—;—;Manual;
 A1;1;ESP32-DevKitC-32E;Pendiente (2 × 1×19 hembra);Espressif;—;Externo;—;Zócalo;Módulo extraíble, compra aparte
 Externo;1;Módulo RTC DS3231 3,3 V;—;Sin circuito de carga CR2032;—;Externo;—;—;
 Externo;1;Sonda DS18B20;—;—;—;Externo;—;—;
 Externo;1;Fuente aislada 36 V ≥ 3 A;—;Pendiente MPN;—;Externo;—;—;
-Externo;1;Módulo SSR 2 canales (del usuario);—;Modelo por confirmar;—;Externo;—;—;
+Externo;1;Módulo SSR 2 canales DollaTek (del usuario);—;5 V, disparo nivel alto, Omron, AC 100-240 V 2 A, fusible 2 A;—;Externo;—;—;Amazon B07DK3ZZSL
