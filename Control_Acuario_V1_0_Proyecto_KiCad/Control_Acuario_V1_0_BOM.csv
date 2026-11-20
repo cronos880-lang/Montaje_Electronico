@@ -13,10 +13,10 @@ D3;1;Schottky 40 V 5 A (retorno lámpara);D_SMA;SS54;C22452;Básico;0,04;SMT;Cam
 D4;1;Doble Schottky;SOT-23;BAT54S;C47546;Extendido;0,02;SMT;
 D5;1;Schottky 40 V 3 A (5 V → DevKit);D_SMA;SS34;C8678;Básico;0,03;SMT;Nuevo rev. B (sustituye a JP1)
 C1;1;47 µF / 63 V electrolítico;CP_Radial_D8.0mm;Electrolítico 63 V;C2960225;Extendido (THT);0,03;Manual;
-C9;1;47 µF / 50 V electrolítico;CP_Radial_D8.0mm;Electrolítico 50 V;C346969;Extendido (THT);0,10;Manual;
+C9;1;220 µF / 35 V electrolítico baja ESR (56 mΩ, 945 mA a 100 kHz);CP_Radial_D8.0mm_P3.50mm;NXH35V220M8*11.5;C346959;Extendido (THT);0,13;Manual;Cambio: TI recomienda 100–180 µF a 400 kHz
 C2;1;4,7 µF / 100 V;C_1210;FS32X475K101EGG;C381466;Extendido;0,22;SMT;
 C4 C5;2;10 µF / 100 V;C_1210;FS32X106K101EGG;C5156756;Extendido;0,43;SMT;Capacidad efectiva a 36 V por verificar
-C10 C11;2;22 µF / 50 V X5R;C_1210;Pendiente MPN;—;Extendido;~0,27;SMT;Capacidad efectiva a 24 V por verificar
+C10 C11;2;10 µF / 50 V X5R;C_1210;CC1210X5R50V106KN;C53084533;Extendido;0,27;SMT;22 µF/50 V 1210 no disponible en JLCPCB
 C3;1;10 µF / 25 V;C_0805;CL21A106KAYNNNE;C15850;Básico;0,03;SMT;Cambio rev. B (antes 1206)
 C6;1;100 nF / 100 V;C_0805;CL21B104KCFNNNE;C28233;Básico;0,02;SMT;
 C7;1;470 nF;C_0805;CL21B474KBFNNNE;C13967;Básico;0,02;SMT;

@@ -1,0 +1,2 @@
+Componentes NO montados por el fabricante (soldar a mano o externos):
+A1 C1 C9 Externo F1 J1 J2 J3 J4 J5 Q1 U1
